@@ -19,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('C:\Users\abull\Downloads\pexels-charlotte-may-5966011.jpg'); /* Use the background image */
+   /* Use the background image */
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
