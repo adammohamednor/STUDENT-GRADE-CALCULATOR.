@@ -1,0 +1,59 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #2b3c4d; /* Darker blue for the form background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    color: #ecf0f1;
+    margin-top: 50px;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size for headings */
+    font-weight: bold; /* Bold font */
+}
+
+.auth-form input {
+    width: calc(100% - 22px);
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em; /* Larger font size for inputs */
+    font-weight: bold; /* Bold font */
+}
+
+.auth-form input:focus {
+    outline: none;
+    border: 2px solid #1abc9c; /* Highlight input border on focus */
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #1abc9c; /* Primary button color */
+    color: white;
+    font-size: 1.2em; /* Larger font size for buttons */
+    font-weight: bold; /* Bold font */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+    background-color: #026e57; /* Darker shade for hover effect */
+}
+
+.auth-form button:active {
+    background-color: #148f77; /* Even darker shade for active state */
+}

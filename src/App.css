@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ecf0f1; /* Light font color */
+  padding: 20px;
+  overflow: hidden;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('C:\Users\abull\Downloads\pexels-charlotte-may-5966011.jpg'); /* Use the background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  filter: brightness(94%) contrast(150%) hue-rotate(-10deg); /* Darken the image and add a blue tint */
+  z-index: -2; /* Place the image behind other elements */
+}
+
+.App::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 50, 0.5); /* Dark blue overlay */
+  z-index: -1; /* Place the overlay behind other elements but above the image */
+}
+
+.App-header {
+  background-color: rgba(52, 73, 94, 0.8); /* Slightly transparent background */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  margin-top: 50px;
+  z-index: 1; /* Ensure the header is above the overlay */
+}
+
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-auth-button {
+  padding: 15px 30px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #1abc9c; /* Primary button color */
+  color: white;
+  font-size: 1.2em; /* Larger font size for buttons */
+  font-weight: bold; /* Bold font */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-auth-button:hover {
+  background-color: #16a085; /* Darker shade for hover effect */
+}
+
+.toggle-auth-button:active {
+  background-color: #148f77; /* Even darker shade for active state */
+}
